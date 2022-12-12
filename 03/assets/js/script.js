@@ -4,7 +4,12 @@ const ele = document.getElementById("ele1");
 /* realizar una funcion que cambie de color con el parametro por defecto GREEN */
 const color = 'green'
 function pintar(color){
-    ele.style.backgroundColor = color
+    if(ele.style.backgroundColor !=color){
+        ele.style.backgroundColor = color
+    }else{
+        ele.style.backgroundColor = ''
+    }
+
 }
 
 /* Agregar un evento "click" que llame a la funcion pintar*/
