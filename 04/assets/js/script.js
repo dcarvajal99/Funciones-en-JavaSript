@@ -1,14 +1,14 @@
-            color = 'white'
+            colora = 'white'
             document.addEventListener('keydown',  color =  (event)=> {
                 if (event.key === 'a') {
-                color = 'grey';
-                console.log(color)
+                colora = 'grey';
+                console.log(colora)
                 } else if (event.key === 's') {
-                color = 'brown';
-                console.log(color)
+                colora = 'brown';
+                console.log(colora)
                 } else if (event.key === 'd') {
-                color ='purple';
-                console.log(color)
+                colora ='purple';
+                console.log(colora)
                 }else {
                     color = 'white'
                     console.log("No ha seleccionado tecla valida, por ende tiene color "+color)
@@ -20,8 +20,8 @@
                 document.querySelectorAll(".click").forEach(el => {
                 el.addEventListener("click", e => {
                     const id = e.target.getAttribute("id");
-                    document.getElementById(id).style.background = color
-                    console.log("se ha puesto de color "+color+ " el div "+id)
+                    document.getElementById(id).style.background = colora
+                    console.log("se ha puesto de color "+colora+ " el div "+id)
                 });
                 });
 
